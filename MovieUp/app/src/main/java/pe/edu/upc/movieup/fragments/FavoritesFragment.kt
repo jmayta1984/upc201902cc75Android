@@ -32,13 +32,11 @@ class FavoritesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         rvFavorite.layoutManager = LinearLayoutManager(context)
         loadFavorites()
     }
 
     private fun loadFavorites() {
-
         movies = AppDatabase.getInstance(view!!.context).getDao().getAll()
         favoriteAdapter = FavoriteAdapter(movies)
         rvFavorite.adapter = favoriteAdapter
