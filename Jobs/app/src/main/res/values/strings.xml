@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Jobs</string>
+    <string name="hint_search">Descripción</string>
+    <string name="bt_search">Buscar</string>
+</resources>
